@@ -1,0 +1,19 @@
+
+<div class="container">
+    <h3 ng-bind ="pagename" style="text-align:center;"></h3>
+    <div class="row">
+        <div class="col-xs-6 text-primary text-left  ">Email Id</div>
+        <div class="col-xs-6 text-left"><input type="text" class="form-control" ng-model ="userId.email"></div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-6 text-primary text-left  ">Password</div>
+        <div class="col-xs-6 text-left"><input type="password" class="form-control" ng-model = "userId.password"></div>
+    </div>
+    <div class="row text-center btn-lg btn-block">
+       <button type="button" class="btn btn-primary" ng-click ="login()">Login</button>
+        <button type="button" class="btn btn-primary" ng-click ="signup()">SignUp</button>
+    </div>
+    
+      </div>
+   

@@ -1,0 +1,13 @@
+<div class="container" >
+    <h3 ng-bind ="pagename" style="text-align:center;"></h3>
+    <div class="row" ng-repeat="field in fields">
+        <div class="container">
+        <div class="col-xs-6 text-primary text-left  ">{{ field.name }}</div>
+        <div class="col-xs-6 text-left"><input type='{{field.type}}' placeholder ='{{field.placeholder}}' data-ng-model = 'data[field.modelname]' class="form-control"></div>
+        </div>
+        </div>
+    <div class="row text-center btn-lg btn-block">
+       <button type="button" class="btn btn-primary" ng-click = "save()">Save</button>
+    </div>
+    {{records}}
+      </div>
